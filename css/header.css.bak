@@ -1,0 +1,115 @@
+body{
+	color: #323235;
+	margin: 0;
+	padding: 0;
+	background: url("../images/bg.jpg") no-repeat top center / cover;
+}
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+/*清除a标签里的默认样式*/
+a{
+	text-decoration: none;
+	color: #c9c9dd;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+/******公共样式开始******/
+/*清除父级元素因子元素浮动导致的高度塌陷*/
+.clearfix::after{
+	content: "";
+	display: both;
+	clear: both;
+}
+/******公共样式结束******/
+.header-nav{
+	width: 100%;
+	height: 84px;
+	font-size: 14px;
+	background: rgba(0,0,0,0.8);
+}
+/*一个弹性盒子 使logo、主导航、登陆区排成一行*/
+.header-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1200px;
+	min-width: 1200px;
+	height: 84px;
+	margin: 0 auto;
+}
+/*logo区*/
+.logo{
+	width: 200px;
+	height: 54px;
+	padding: 15px 0;
+	background: url("../images/logo.png") no-repeat center center;
+}
+.logo > a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/*主导航区*/
+.main-nav >li{
+	float: left;
+	width: 110px;
+	height: 84px;
+}
+/*鼠标悬停 显示一张背景图片*/
+.main-nav >li:hover{
+	background: url("../images/index.png") no-repeat;
+}
+.main-nav > li > a{
+	display: block;
+	width: 110px;
+	height: 64px;
+	line-height: 30px;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 18px;
+}
+/*使em标签里的元素独占一行 达到换行效果*/
+.main-nav > li > a > em{
+	display: block;
+	padding-top: 5px;
+	line-height: 16px;
+	font-size: 12px;
+}
+/*登陆区*/
+.login_pannel{
+	width: 182px;
+	height: 45px;
+}
+.login_pannel > a{
+	display: block;
+	float: left;
+	width: 44px;
+	height: 44px;
+	margin-right: 7px;
+	text-align: center;
+	background: 
+		radial-gradient(
+			circle,
+			transparent 0,
+			transparent 67%,
+			yellow 0
+		) no-repeat center center;
+	border-radius: 50%;
+}
+.login_pannel > unlogin{
+	display: left;
+	line-height: 45px;
+}
+.unlogin > p{
+	line-height: 21px;
+	color: #858792;
+}
+.unlogin > p:first-child{
+	font-size: 16px;
+	color: #ffffff;
+}
