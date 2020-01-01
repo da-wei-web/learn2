@@ -1,0 +1,25 @@
+.main{
+	width: 1200px;
+	min-height: 600px; 
+	margin: 0 auto;
+	padding-top: 456px;
+}
+.banner{
+	width: 604px;
+	height: 342px;
+	background-color: orange;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide{
+	height: 298px;
+	background: url("../images/swiper1.jpeg") no-repeat top center;
+}
+.swiper-slide:nth-child(2){
+	background: url("../images/swiper2.jpeg") no-repeat top center;
+}
+.swiper-slide:nth-child(3){
+	background: url("../images/swiper3.jpeg") no-repeat top center;
+}

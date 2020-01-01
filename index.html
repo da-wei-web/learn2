@@ -7,6 +7,13 @@
 		<meta name="author" content="27期-大卫"><!--作者信息-->
 		<!--引入头部样式-->
 		<link rel="stylesheet" href="./css/header.css">
+		<!--引入主要内容区样式-->
+		<link rel="stylesheet" href="./css/main.css">
+		<!--引入轮播图-->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">  
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">    
+		<script src="https://unpkg.com/swiper/js/swiper.js"> </script>  
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
 		<title>自我约束</title>
 	</head>
 	<body>
@@ -71,5 +78,23 @@
 				</section>
 			</nav>
 		</header>
+		<section class="main">
+			<section class="banner">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+					</div>
+				</div>
+			</section>
+		</section>
 	</body>
 </html>
+<script>
+	var mySwiper = new Swiper('.swiper-container', {
+		autoplay: {
+			delay: 3000,//3秒切换一次
+		},
+	})
+</script>
