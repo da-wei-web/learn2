@@ -79,6 +79,7 @@
 			</nav>
 		</header>
 		<section class="main">
+			<!--轮播图-->
 			<section class="banner">
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
@@ -86,6 +87,7 @@
 						<div class="swiper-slide"></div>
 						<div class="swiper-slide"></div>
 					</div>
+					<div class="swiper-pagination"></div><!--分页器。如果放置在swiper-container外面，需要自定义样式。-->
 				</div>
 			</section>
 		</section>
@@ -96,5 +98,9 @@
 		autoplay: {
 			delay: 3000,//3秒切换一次
 		},
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		loop : true,
 	})
 </script>
